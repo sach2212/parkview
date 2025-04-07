@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>complete responsive fitness and gym website design</title>
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"
+    integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./../css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="lightbox.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar flex1">
+        <div class="sticky_logo logo">
+          <img src="./../image/logo-bg-1.png" alt="">
+        </div>
+
+        <ul class="nav-menu">
+          <li> <a href="/index.html">Home</a> </li>
+          <li> <a href="#about">about</a> </li>
+
+          <li> <a href="#testimonials">testimonials</a> </li>
+          <li> <a href="./propert/gallery.html">gallery</a> </li>
+
+          <li> <a href="#contact">contact</a> </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div class="head_contact">
+
+          <span> <a href="https://wa.me/+917770052172" style="color: inherit; color: white; text-decoration: 
+            none;" target="_blank">
+              <i class="fas fa-phone-volume"></i>
+            </a></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobliemmenu);
+
+    function mobliemmenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
+
+
+  <section class="gal-page">
+    <div class="p-home">
+
+      <div class="p-heading">
+
+        <h1 class="bighead"> gallery</h1>
+
+      </div>
+
+    </div>
+    <div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+      <a href="https://wa.me/+917770052172" 
+         style="color: #25D366; font-size: 2.8rem; text-decoration: none;" 
+         target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </section>
+
+
+  <section class="all-gallery gallery2">
+
+    <!-- <h1>gallery </h1> -->
+    <div class="gallery ">
+
+
+      <div class="g-cont">
+
+        <a href="/image/event1.jpeg" data-lightbox="models" data-title="">
+          <img src="/image/event1.jpeg" alt="">
+        </a>
+
+
+
+        <a href="/image/event2.jpeg" data-lightbox="models" data-title="">
+          <img src="/image/event2.jpeg" alt="">
+        </a>
+
+        <a href="/image/event3.jpeg" data-lightbox="models" data-title="">
+          <img src="/image/event3.jpeg" alt="">
+        </a>
+
+        <a href="/image/event4.jpeg" data-lightbox="models" data-title="">
+          <img src="/image/event4.jpeg" alt="">
+        </a>
+
+        <a href="/image/event6.jpeg" data-lightbox="models" data-title="">
+          <img src="/image/event6.jpeg" alt="">
+        </a>
+
+        <a href="/image/event7.jpeg" data-lightbox="models" data-title="">
+          <img src="/image/event7.jpeg" alt="">
+        </a>
+
+        </a>
+        <a href="/image/room1.jpeg" data-lightbox="models" data-title="">
+          <img src="/image/room1.jpeg" alt="">
+        </a>
+        <a href="/image/room2.jpeg" data-lightbox="models" data-title="">
+          <img src="/image/room2.jpeg" alt="">
+        </a>
+
+
+        <a href="/image/room3.jpeg" data-lightbox="models" data-title="">
+          <img src="/image/room3.jpeg" alt="">
+        </a>
+
+        <a href="/image/room4.jpeg" data-lightbox="models" data-title="">
+          <img src="/image/room4.jpeg" alt="">
+        </a>
+
+        <a href="/image/room5.jpeg" data-lightbox="models" data-title="">
+          <img src="/image/room5.jpeg" alt="">
+        </a>
+
+        <a href="/image/room6.jpeg" data-lightbox="models" data-title="">
+          <img src="/image/room6.jpeg" alt="">
+        </a>
+
+        <a href="/image/room7.jpeg" data-lightbox="models" data-title="">
+          <img src="/image/room7.jpeg" alt="">
+        </a>
+
+        <a href="/image/room8.jpeg" data-lightbox="models" data-title="">
+          <img src="/image/room8.jpeg" alt="">
+        </a>
+
+        <a href="/image/room9.jpeg" data-lightbox="models" data-title="">
+          <img src="/image/room9.jpeg" alt="">
+        </a>
+        
+        <a href="/image/swim1.jpeg" data-lightbox="models" data-title="">
+          <img src="/image/swim1.jpeg" alt="">
+        </a>
+        
+        
+
+
+
+
+
+      </div>
+      <!-- <a href="" class="btn">load more</a> -->
+    </div>
+
+    <!-- <button class="flex1">
+              <span> <a href="https://wa.me/+917770052172" style="color: inherit; text-decoration: 
+                none;" target="_blank">
+                  Check Now
+                </a></span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button> -->
+
+
+  </section>
+
+
+
+  <footer>
+    <div class="container top">
+      <div class="subscribe" id="contact">
+        <h2>Subscribe newsletter</h2>
+        <p>
+          Subscribe to the Park View Hotel newsletter for exclusive deals, event updates, and special offers—right in
+          your inbox!
+
+
+        </p>
+        <div class="input flex">
+          <input type="email" placeholder="Your Email address">
+          <button class="flex1">
+            <span>Subscribe</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="content grid  top">
+        <div class="box">
+          <div class="logo">
+            <img src="image/logo.png" alt="">
+          </div>
+          <p>Visit now to Park View Hotel, where comfort meets elegance in every corner.
+            Enjoy a relaxing stay with modern amenities, scenic views, and warm hospitality.
+            Whether for business or leisure, your perfect getaway starts here.
+            
+            Want it to sound more premium, romantic, or adventure-focused? I can tweak it! </p>
+          
+        </div>
+
+        <div class="box">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i>Home</li>
+            <li><i class="fas fa-angle-double-right"></i>Gallery</li>
+            <li><i class="fas fa-angle-double-right"></i>about</li>
+            <li><i class="fas fa-angle-double-right"></i>Stay</li>
+            <li><i class="fas fa-angle-double-right"></i>Testimonial</li>
+            <li><i class="fas fa-angle-double-right"></i>Contact</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Services</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i>Restaurant</li>
+            <li><i class="fas fa-angle-double-right"></i>Swimming Pool</li>
+            <li><i class="fas fa-angle-double-right"></i>Buffet</li>
+            <li><i class="fas fa-angle-double-right"></i>Garden</li>
+            <li><i class="fas fa-angle-double-right"></i>Events</li>
+            <li><i class="fas fa-angle-double-right"></i>Indoor Games</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Services</h2>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>Hotel Park View
+                , Matheran main market,
+                MG road, 410102</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>+91 77700 52172
+
+              </p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="far fa-envelope"></i>
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>parkviewhotelmatheran@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+  <!-- custom js file link  -->
+  <script src="js/script.js"></script>
+  <script src="lightbox-plus-jquery.js"></script>
+
+
+
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
