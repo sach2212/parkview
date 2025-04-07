@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Hotel Booking Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+  <!-- <section class="head">
+    <div class="container flex1">
+      <div class="scoial">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      <div class="logo">
+        <img src="image/logo.png" alt="">
+      </div>
+      <div class="address">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>205 Fida Walinton, Tongo Street Front, USA</span>
+      </div>
+    </div>
+  </section> -->
+
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar flex1">
+        <div class="sticky_logo logo">
+          <img src="image/logo-bg-1.png" alt="">
+        </div>
+
+        <ul class="nav-menu">
+          <li> <a href="#home">Home</a> </li>
+          <li> <a href="#about">about</a> </li>
+
+          <li> <a href="#testimonials">testimonials</a> </li>
+          <li> <a href="./propert/gallery.html">gallery</a> </li>
+
+          <li> <a href="#contact">contact</a> </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div class="head_contact">
+        
+          <span> <a href="https://wa.me/+917770052172" style="color: inherit; color: white; text-decoration: 
+            none;" target="_blank">
+              <i class="fas fa-phone-volume"></i>
+            </a></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobliemmenu);
+
+    function mobliemmenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
+
+
+  <section class="home" id="home">
+    <div class="container">
+      <h1>Hotel Park View</h1> 
+
+      
+    <!-- <span> <a href="https://wa.me/+917770052172" style="color: inherit; font-size: 5rem; color: white; text-decoration: 
+      none;" target="_blank">
+<i class="fab fa-whatsapp"></i> -->
+
+
+      <p>
+
+        Matheran welcomes you with fresh mountain air, scenic landscapes, and a peaceful atmosphere. <br> Unplug from
+        daily
+        life and reconnect with nature.
+
+
+
+      </p>
+
+      <div class="content grid">
+        <div class="box">
+          <span>Arriving Date </span> <br>
+          <input type="date" placeholder="29/20/2021">
+        </div>
+        <div class="box">
+          <span>Departure Time </span> <br>
+          <input type="date" placeholder="29/20/2021">
+        </div>
+        <div class="box">
+          <span>Adults</span> <br>
+          <input type="number" placeholder="01">
+        </div>
+        <div class="box">
+          <span>Children </span> <br>
+          <input type="number" placeholder="01">
+        </div>
+        <div class="box">
+          <button class="flex1" style="text-align: center;">
+
+            <span> <a href="https://wa.me/+917770052172" style="color: white; text-decoration: 
+              none;" target="_blank">
+                Book Now
+              </a></span>
+            <!-- </a> -->
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+
+      
+      <div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+        <a href="https://wa.me/+917770052172" 
+           style="color: #25D366; font-size: 2.8rem; text-decoration: none;" 
+           target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+
+
+    </div>
+
+    
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="heading">
+        <h5>EXPLORE</h5>
+        <h2>Welcome To Matheran
+        </h2>
+      </div>
+
+      <div class="content flex  top">
+        <div class="left">
+          <h3>RAISING COMFORT TO THE HIGHEST LEVEL
+          </h3>
+          <p>Experience the unique charm of Park View Hotel in Matheran, a heaven where peace and nature harmoniously
+            coexist. This eco-friendly resort, set amidst lush landscapes, promises a rejuvenating stay with stunning
+            valley vistas, elegant accommodations, and premium amenities including a spa and dining.</p>
+
+
+
+          <p> Discover Matheran's scenic beauty through guided nature walks or horseback adventures, or simply enjoy
+            tranquil strolls. Perfect for romantic breaks, family trips, or corporate events, Park View Hotel HO creates
+            lasting memories within its serene and picturesque setting.</p>
+
+          <p>
+            Indulge in a luxurious stay with well-appointed rooms offering breathtaking views of the surrounding hills
+            and
+            forests. Each space is thoughtfully designed to blend comfort with nature, providing guests with a peaceful
+            retreat.
+          </p>
+
+
+          <button class="flex1">
+            <span> <a href="https://wa.me/+917770052172" style="color: inherit; text-decoration: 
+              none;" target="_blank">
+                Check Now
+              </a></span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="right">
+          <img src="image/a.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <section class="wrapper">
+    <div class="container">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="heading">
+            <h5>THE MOUNTAIN VIEW</h5>
+            <h3>A charming view of the Martheran</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p> Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="item">
+          <div class="heading">
+            <h5>THE CITY VIEW</h5>
+            <h3>A charming view of the city</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p> Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="item">
+          <div class="heading">
+            <h5>THE CITY VIEW</h5>
+            <h3>A charming view of the city</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p> Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  <section class="wrapper2">
+    <div class="container">
+      <div class="heading mtop">
+        <h5>FACILITIES</h5>
+        <h2>Giving entirely awesome </h2>
+      </div>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <!-- <i class="fa-solid fa-tents"></i> -->
+          <!-- <i class="fas fa-mug-hot"></i> -->
+
+          <i class="far fa fa-fire"></i>
+          </span>
+
+          <h3>Bone Fire</h3>
+          <p>Enjoy a mesmerizing bonfire
+            experience at
+            Matheran, under the starlit sky.</p>
+
+          <span class='far fa-long-arrow-alt-right'></span>
+        </div>
+        <div class="box">
+          <!-- <i class="fas fa-mug-hot"></i> -->
+          <!-- <i class="fa-solid fa-tents"></i> -->
+          <i class="fa fa-campground"></i>
+
+          <h3>Camping</h3>
+          <p>Have an unforgettable camping experience, surrounded
+            by nature and a starlit sky</p>
+          <span class='far fa-long-arrow-alt-right'></span>
+        </div>
+        <div class="box">
+
+          <i class="fa fa-tree"></i>
+          <h3>Forest Trek</h3>
+          <p>Expertly organizing unforgettable and spectacular events, crafting moments
+            that leave a lasting impression.
+
+
+          </p>
+          <span class='far fa-long-arrow-alt-right'></span>
+        </div>
+        <div class="box">
+
+          <i class="fa fa-gift"></i>
+          <h3>Unlimitted Buffet</h3>
+          <p>Delicious unlimited vegetarian buffet with a variety of flavors.
+            Fresh, wholesome, and crafted to satisfy every palate</p>
+          <span class='far fa-long-arrow-alt-right'></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="room wrapper2 top" id="room">
+    <div class="container">
+      <div class="heading">
+        <h5>OUR ROOMS</h5>
+        <h2>Fascinating rooms & suites </h2>
+      </div>
+      <div class="content flex mtop">
+        <div class="left grid2">
+          <div class="box">
+            <i class="fas fa-desktop"></i>
+            <p>Free Cost</p>
+            <h3>No booking fee</h3>
+          </div>
+          <div class="box">
+            <i class="fas fa-dollar-sign"></i>
+            <p>Free Cost</p>
+            <h3>Best rate guarantee</h3>
+          </div>
+          <div class="box">
+            <i class="fab fa-resolving"></i>
+            <p>Free Cost</p>
+            <h3>Reservations 24/7</h3>
+          </div>
+          <div class="box">
+            <i class="fal fa-alarm-clock"></i>
+            <p>Free Cost</p>
+            <h3>High-speed Wi-Fi</h3>
+          </div>
+          <div class="box">
+            <i class="fas fa-mug-hot"></i>
+            <p>Free Cost</p>
+            <h3>Free breakfast</h3>
+          </div>
+          <div class="box">
+            <i class="fa fa-utensils"></i>
+            <p>Free Cost</p>
+            <h3>Veg Unlimited Buffet</h3>
+          </div>
+        </div>
+        <div class="right">
+          <img src="image/r.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="timer about wrapper">
+    <div class="background"> </div>
+    <div class="container">
+      <div class="heading">
+        <h5>LAST MINUTE!</h5>
+        <h2> <span>Incredible!</span> Are you coming today</h2>
+      </div>
+
+      <!-- <div id="time" class="flex1 mtop"> </div> -->
+    </div>
+  </section>
+  <script src="js/jquery.countdown.js" charset="utf-8"></script>
+  <script src="js/jquery.countdown.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $('#time').countdown('2024/01/01', function (event) {
+      $(this).html(event.strftime(
+        '<div class="clock"><span>%d</span> <p>Days</p></div> ' +
+        '<div class="clock"><span>%H</span> <p>Hours</p></div> ' +
+        '<div class="clock"><span>%M</span> <p>Minutes</p></div> ' +
+        '<div class="clock"><span>%S</span> <p>Seconds</p></div> '
+      ));
+    });
+  </script>
+
+
+  <section class="offer mtop" id="services">
+    <div class="container">
+      <div class="heading">
+        <h5>EXCLUSIVE OFFERS </h5>
+        <h3>You can get an exclusive offer </h3>
+      </div>
+
+      <div class="content grid2 mtop">
+
+        <div class="box flex">
+          <div class="left">
+            <img src="image/hiking.webp" alt="">
+          </div>
+          <div class="right">
+            <h4>Hiking</h4>
+            <!-- <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div> -->
+            <p> Matheran boasts over 30 scenic hiking trails, each offering its own blend of dense forest paths,
+              panoramic viewpoints, and peaceful solitude. From gentle walks to more rugged routes, every trail here is
+              an opportunity to slow down and immerse yourself in nature.</p>
+
+            <button class="flex1">
+              <span> <a href="https://wa.me/+917770052172" style="color: inherit; color: white; text-decoration: 
+                none;" target="_blank">
+                  Check Now
+                </a></span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="image/livemusic.webp" alt="">
+          </div>
+          <div class="right">
+            <h4>Live Music</h4>
+
+            <p> Surrounded by lush greenery and free from the noise of vehicles,think soulful performances, cozy
+              bonfires, and chilled-out moments with friends.
+              Whether you're dancing barefoot or simply soaking in the sounds with a cool breeze in the air, it's the
+              perfect getaway for music lovers looking to relax, reconnect, and vibe in the heart of the hills.</p>
+
+            <button class="flex1">
+              <span> <a href="https://wa.me/+917770052172" style="color: inherit; color: white; text-decoration: 
+                none;" target="_blank">
+                  Check Now
+                </a></span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+
+
+        <div class="box flex">
+          <div class="left">
+            <img src="image/trekking1 (1).jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Trekking</h4>
+
+            <p>
+              Trekking in Matheran is a refreshing escape into nature’s embrace, where every trail is wrapped in lush
+              greenery and peaceful silence. As you walk through red mud paths shaded by thick forests, you're greeted
+              by the soothing sounds of chirping birds, rustling leaves, and cool mountain air.
+
+            </p>
+
+            <button class="flex1">
+              <span> <a href="https://wa.me/+917770052172" style="color: inherit; color: white; text-decoration: 
+                none;" target="_blank">
+                  Check Now
+                </a></span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="image/camping.webp" alt="">
+          </div>
+          <div class="right">
+            <h4>Forest Camping</h4>
+
+            <p>
+              Forest Camping in Matheran is the perfect blend of adventure and serenity, where you swap city lights for
+              starry skies and wake up to the sounds of birds and rustling trees. Tucked deep within the lush greenery
+              of the Western Ghats, camping here lets you truly disconnect and recharge in nature’s lap.
+
+
+            </p>
+
+            <button class="flex1">
+              <span> <a href="https://wa.me/+917770052172" style="color: inherit; color: white; text-decoration: 
+                none;" target="_blank">
+                  Check Now
+                </a></span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="box flex">
+          <div class="left">
+            <img src="image/swimming-pool.webp" alt="">
+          </div>
+          <div class="right">
+            <h4>Swimming</h4>
+
+            <p> Take a refreshing dip at Hotel Park View and let the worries melt away as you swim surrounded by
+              peaceful greenery and fresh mountain air. Whether you're kicking off your day with an energizing swim or
+              winding down after exploring Matheran,</p>
+
+            <button class="flex1">
+              <span> <a href="https://wa.me/+917770052172" style="color: inherit; color: white; text-decoration: 
+                none;" target="_blank">
+                  Check Now
+                </a></span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="image/famevent.webp" alt="">
+          </div>
+          <div class="right">
+            <h4>Family Events</h4>
+
+
+            <p>
+              Hotel Park View is the perfect place to create unforgettable memories with your loved ones through
+              beautifully organized family events. Whether it’s a birthday celebration, anniversary, reunion, or just a
+              weekend getaway, the resort offers a cozy and scenic setting where every moment feels special.
+            </p>
+
+            <button class="flex1">
+              <span> <a href="https://wa.me/+917770052172" style="color: inherit; color: white; text-decoration: 
+                none;" target="_blank">
+                  Check Now
+                </a></span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="area top">
+    <div class="container">
+      <div class="heading">
+        <h5>RESTAURANT</h5>
+        <h3>The area we cover under Park View</h3>
+      </div>
+
+      <div class="content flex mtop">
+        <div class="left">
+          <img src="image/aera.jpg" alt="">
+        </div>
+        <div class="right">
+          <ul>
+            <li>Restaurant </li>
+            <li>Swimming pool </li>
+            <li>Event Hall</li>
+          </ul>
+
+          <p>At Hotel Park View, Matheran, we offer the perfect blend of comfort, relaxation, and celebration through
+            our thoughtfully designed spaces. Enjoy delicious meals at our in-house restaurant, where every dish is made
+            with care and local flavors. </p>
+          <p>Take a refreshing break in our swimming pool, surrounded by lush greenery and peaceful vibes — ideal for
+            both fun and relaxation. Planning a special occasion? Our spacious event hall is perfect for hosting
+            birthdays, anniversaries, family functions, or corporate gatherings, all in a scenic, serene setting.
+            Whether you're here to unwind or celebrate, Park View has everything you need for a memorable stay.</p>
+          <button class="flex1">
+            <span> <a href="https://wa.me/+917770052172" style="color: inherit; color: white; text-decoration: 
+              none;" target="_blank">
+                Check Now
+              </a></span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="offer2 about wrapper timer top" id="shop">
+    <div class="container">
+      <div class="heading">
+        <h5>EXCLUSIVE OFFERS </h5>
+        <h3>You can get an exclusive offer </h3>
+      </div>
+
+      <div class="content grid  top">
+        <div class="box">
+          <h5>UP TO 30% OFF</h5>
+          <h3>Swimming for man</h3>
+          <span>4.5 <label>(432 Reviews)</label> </span>
+          <p>Swimming doller dolor sit aet odu tur adiing elitse</p>
+          <div class="flex">
+            <i class="fal fa-alarm-clock"> Duration: 2Hours</i>
+            <i class="far fa-dot-circle"> 18+ years</i>
+          </div>
+          <button class="flex1">
+            <span>Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="box">
+          <h5>UP TO 30% OFF</h5>
+          <h3>Swimming for man</h3>
+          <span>4.5 <label>(432 Reviews)</label> </span>
+          <p>Swimming doller dolor sit aet odu tur adiing elitse</p>
+          <div class="flex">
+            <i class="fal fa-alarm-clock"> Duration: 2Hours</i>
+            <i class="far fa-dot-circle"> 18+ years</i>
+          </div>
+          <button class="flex1">
+            <span>Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="box">
+          <h5>UP TO 30% OFF</h5>
+          <h3>Swimming for man</h3>
+          <span>4.5 <label>(432 Reviews)</label> </span>
+          <p>Swimming doller dolor sit aet odu tur adiing elitse</p>
+          <div class="flex">
+            <i class="fal fa-alarm-clock"> Duration: 2Hours</i>
+            <i class="far fa-dot-circle"> 18+ years</i>
+          </div>
+          <button class="flex1">
+            <span>Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+  <section class="customer top" id="testimonials">
+    <div class="container">
+      <div class="heading">
+        <h5>TESTIMONIALS </h5>
+        <h3>What customers say </h3>
+      </div>
+
+      <div class="owl-carousel owl-theme mtop">
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Perfect Weekend Getaway</h3>
+          <p>“Had the most peaceful weekend at Hotel Park View! The location is surrounded by greenery, and the view
+            from our room was just stunning. The staff was super friendly, and the food was delicious. Loved the calm
+            vibes — will definitely be coming back!”</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="image/c1.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Amish Yadav</h3>
+
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Excellent Services</h3>
+          <p>
+            "We had an amazing weekend at Hotel Park View with the entire family! The rooms were clean, the staff was
+            super helpful, and the kids loved the open space to play around. The natural surroundings made everything
+            feel peaceful and refreshing. Definitely planning another trip soon!"
+
+
+          </p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="image/c2.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3> NItesh Sawant</h3>
+
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Family Friendly</h3>
+          <p>
+            “We stayed here with our whole family for a small reunion, and it was a fantastic experience. The kids loved
+            the open space and swimming pool, while the elders enjoyed the quiet, clean surroundings. Perfect spot for
+            family bonding!”
+
+
+          </p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="image/c3.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Ayman Shaikh</h3>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  <section class="gallary top" id="gallary">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="image/g1.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/g2.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/g3.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/g4.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/g5.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/g1.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/g2.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/g3.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      slideTransition: 'linear',
+      autoplayTimeout: 4000,
+      autoplaySpeed: 4000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script>
+
+
+<!-- <div class="mapouter">
+  <div class="gmap_canvas">
+    <iframe width="600" height="474" id="gmap_canvas" 
+    src="https://maps.google.com/maps?q=Hotel+Park+View+Matheran%2C+X7PC%2BP9V%2C+Railway+Station%2C+MG+Rd%2C+near+Matheran%2C+Matheran%2C+Maharashtra+410102&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.alarm-clock.net"></a><br><a href="https://www.timertimer.net"></a><br><style>.mapouter{position: relative;text-align: right;height: 474px;width: 600px;}</style><a href="https://www.ongooglemaps.com">adding google map to website</a><style>.gmap_canvas{overflow: hidden;background: none !important;height: 474px;width: 600px;}
+
+    </style>
+    </div>
+  </div> -->
+
+
+  <section class="map top">
+    <!-- <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14131.036667732067!2d85.32395955!3d27.69383745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1638187678048!5m2!1sen!2snp"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"> 
+    
+    
+    </iframe> -->
+ 
+  <div class="map top">
+    <iframe width="600" height="474" id="gmap_canvas" 
+    src="https://maps.google.com/maps?q=Hotel+Park+View+Matheran%2C+X7PC%2BP9V%2C+Railway+Station%2C+MG+Rd%2C+near+Matheran%2C+Matheran%2C+Maharashtra+410102&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.alarm-clock.net"></a><br><a href="https://www.timertimer.net"></a><br><style>.mapouter{position: relative;text-align: right;height: 474px;width: 600px;}</style><a href="https://www.ongooglemaps.com"></a><style>.gmap_canvas{overflow: hidden;background: none !important;height: 474px;width: 600px;}
+
+    </style>
+    </div>
+  </div>
+  
+    </section>
+
+
+
+  <footer>
+    <div class="container top">
+      <div class="subscribe" id="contact">
+        <h2>Subscribe newsletter</h2>
+        <p>
+          Subscribe to the Park View Hotel newsletter for exclusive deals, event updates, and special offers—right in
+          your inbox!
+
+
+        </p>
+        <div class="input flex">
+          <input type="email" placeholder="Your Email address">
+          <button class="flex1">
+            <span>Subscribe</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="content grid  top">
+        <div class="box">
+          <div class="logo">
+            <img src="image/logo.png" alt="">
+          </div>
+          <p>Visit now to Park View Hotel, where comfort meets elegance in every corner.
+            Enjoy a relaxing stay with modern amenities, scenic views, and warm hospitality.
+            Whether for business or leisure, your perfect getaway starts here.
+            
+            Want it to sound more premium, romantic, or adventure-focused? I can tweak it! </p>
+          
+        </div>
+
+        <div class="box">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i>Home</li>
+            <li><i class="fas fa-angle-double-right"></i>Gallery</li>
+            <li><i class="fas fa-angle-double-right"></i>about</li>
+            <li><i class="fas fa-angle-double-right"></i>Stay</li>
+            <li><i class="fas fa-angle-double-right"></i>Testimonial</li>
+            <li><i class="fas fa-angle-double-right"></i>Contact</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Services</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i>Restaurant</li>
+            <li><i class="fas fa-angle-double-right"></i>Swimming Pool</li>
+            <li><i class="fas fa-angle-double-right"></i>Buffet</li>
+            <li><i class="fas fa-angle-double-right"></i>Garden</li>
+            <li><i class="fas fa-angle-double-right"></i>Events</li>
+            <li><i class="fas fa-angle-double-right"></i>Indoor Games</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Services</h2>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>Hotel Park View
+                , Matheran main market,
+                MG road, 410102</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>+91 77700 52172
+
+              </p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="far fa-envelope"></i>
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>parkviewhotelmatheran@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+
+</html>

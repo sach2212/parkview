@@ -1,0 +1,131 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Noto+Sans&family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital@1&family=Lora&display=swap');*/
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+
+
+section {
+  /* padding: 5rem 9%; */
+  
+}
+
+
+.p-home{
+  background: rgb(255, 255, 255);
+}
+
+.bighead {
+  font-size: 3.9rem;
+  color: rgb(216, 179, 67);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.4rem;
+  margin: 3rem 0;
+  font-family: 'Cinzel', serif; 
+  background-color: white;
+  
+}
+
+
+
+
+/* ---------------------gallery cing ends ---------- */
+
+.all-gallery {
+  /* border-right: 1px solid wheat; */
+
+  background-image: 
+
+    url(/image/6213214.jpg);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+ 
+   text-align: center;
+ 
+
+}
+
+.all-gallery .button{
+  margin-bottom: 6rem;
+}
+
+.gal-page{
+
+  font-family: 'Cinzel', serif; 
+  padding-top: 5rem;
+  background-color: #ffffff;
+}
+
+.gal-page p {
+   font-size: 2.5rem;
+   background-color: #000000;
+}
+
+
+
+.all-gallery.gallery2 {
+   
+  padding: 0;
+  /* margin-top: 4rem; */
+}
+.gallery {
+  width: 100%;
+ 
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 50px 9%;
+  flex-direction: column;
+  
+ 
+}
+.g-cont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-gap: 6rem;
+  width: 100%;
+  height: 100%;
+ 
+}
+.g-cont img {
+  width: 75%;
+ 
+ 
+}
+
+
+ 
+
+.all-gallery h1 {
+  font-size: 6.3rem;
+  margin: 2rem 0;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.all-gallery h1::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 45%;
+  height: 1.8px;
+  width: 15.5rem;
+  background-color: white;
+}
+
+
+/* ---------------------gallery ends ---------- */
